@@ -12,10 +12,8 @@ const sumAll = function (start, end) {
     end = temp;
   }
   let totalSum = 0;
-  count = start;
-  while (start <= end) {
-    totalSum += start;
-    start += 1;
+  for (let i = start; i <= end; i++) {
+    totalSum+=i;
   }
   return totalSum;
 };
